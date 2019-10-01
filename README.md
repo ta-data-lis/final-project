@@ -7,7 +7,7 @@
 - [Project Goals](#project-goals)
 - [Requirements](#requirements)
 - [Deliverables](#deliverables)
-- [Schedule](#schedule)
+- [To Do List](#todolist)
 - [Presentation](#presentation)
 - [Tips & Tricks](#tips-&-tricks)
 
@@ -42,7 +42,7 @@ In this project, you will pick a topic of your choosing and perform an end-to-en
 * Repository with your workflow + documentation + code. Even if you are working alone, you need to keep good practices!
 * The database where you have kept your data.  
 
-<a name="schedule"></a>
+<a name="todolist"></a>
 
 ## To Do List
 * Choose your topic and to work as a team or individually.
