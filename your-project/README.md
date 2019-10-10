@@ -1,9 +1,9 @@
 <img src="https://bit.ly/2VnXWr2" alt="Ironhack Logo" width="100"/>
 
-# Title of My Project
-*[Your Name]*
+# Predict Future Sales
+*[Linda Ritter]*
 
-*[Your Cohort, Campus & Date]*
+*[Data Squad 21, Lisbon 2019-10-11]*
 
 ## Content
 - [Project Description](#project-description)
@@ -19,22 +19,28 @@
 - [Links](#links)
 
 ## Project Description
-Write a short description of your project: 3-5 sentences about what your project is about, why you chose this topic (if relevant), and what you are trying to show.
+To ensure the future growth of your business you have to make wise decisions - now. One step towards this is predict future sales, because this is the base for your business revenue, this is the base for your profability. For that I create a model to forecast the future sales in a time series.
 
 ## Hypotheses / Questions
-* What data/business/research/personal question you would like to answer?
-* What is the context for the question and the possible scientific or business application?
-* What are the hypotheses you would like to test in order to answer your question?  
-Frame your hypothesis with statistical/data languages (i.e. define Null and Alternative Hypothesis). You can use formulas if you want but that is not required.
+* How many products are you going to sell in the future?
+* How much of each product and of each store do you need to order for the next month?
+
 
 ## Dataset
-* Where did you get your data? If you downloaded a dataset (either public or private), describe where you downloaded it and include the command to load the dataset.
-* Did you build your own datset? If so, did you use an API or a web scraper? PRovide the relevant scripts in your repo.
-* For all types of datasets, provide a description of the size, complexity, and data types included in your dataset, as well as a schema of the tables if necessary.
-* If the question cannot be answered with the available data, why not? What data would you need to answer it better?
+kaggle | Predict Future Sales (competion, private)
+ - items.csv
+ - item_categories.csv
+ - shops.csv
+ - sales_train_v2.csv
+ - test.csv
 
 ## Cleaning
-Describe your full process of data wrangling and cleaning. Document why you chose to fill missing values, extract outliers, or create the variables you did as well as your reasoning behind the process.
+I translated the shop names into english (data in russian) via googletrans. 
+Afterwards I merged the different datasets to one big dataset: 
+ - items.csv and item_categories.csv on item_category_id
+ - items.csv and sales_train_v2.csv on item_id
+ - sales_train_v2.csv and shops.csv on shop_id
+ The next step was to transform the date to a Timestamp
 
 ## Analysis
 * Overview the general steps you went through to analyze your data in order to test your hypothesis.
