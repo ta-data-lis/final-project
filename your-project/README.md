@@ -1,17 +1,16 @@
 <img src="https://bit.ly/2VnXWr2" alt="Ironhack Logo" width="100"/>
 
-# Title of My Project
-*[Your Name]*
+# Drug Review Dataset (Drugs.com) 
+*[Laura Würz]*
 
-*[Your Cohort, Campus & Date]*
+*[Datasquad 21, Lisbon & October 2019]*
 
 ## Content
 - [Project Description](#project-description)
-- [Hypotheses / Questions](#hypotheses-questions)
+- [Questions](#hypotheses-questions)
 - [Dataset](#dataset)
 - [Cleaning](#cleaning)
 - [Analysis](#analysis)
-- [Model Training and Evaluation](#model-training-and-evaluation)
 - [Conclusion](#conclusion)
 - [Future Work](#future-work)
 - [Workflow](#workflow)
@@ -19,54 +18,64 @@
 - [Links](#links)
 
 ## Project Description
-Write a short description of your project: 3-5 sentences about what your project is about, why you chose this topic (if relevant), and what you are trying to show.
+The dataset provides patient reviews on specific drugs along with related conditions and a 10 star patient rating reflecting overall patient satisfaction. The data was obtained by crawling online pharmaceutical review sites. The intention was to study whether ratings depend on the condition the consumer suffered from and to conduct a sentiment analysis to compare whether reviews and ratings differ from each other. 
 
-## Hypotheses / Questions
-* What data/business/research/personal question you would like to answer?
-* What is the context for the question and the possible scientific or business application?
-* What are the hypotheses you would like to test in order to answer your question?  
-Frame your hypothesis with statistical/data languages (i.e. define Null and Alternative Hypothesis). You can use formulas if you want but that is not required.
+## Questions
+* 1. Do ratings given depend on the condition suffered from?
+* 2. Do ratings and reviews differ from another?  
+
 
 ## Dataset
-* Where did you get your data? If you downloaded a dataset (either public or private), describe where you downloaded it and include the command to load the dataset.
-* Did you build your own datset? If so, did you use an API or a web scraper? PRovide the relevant scripts in your repo.
-* For all types of datasets, provide a description of the size, complexity, and data types included in your dataset, as well as a schema of the tables if necessary.
-* If the question cannot be answered with the available data, why not? What data would you need to answer it better?
+* The dataset was downloaded from UCI Machine Learning Repository via Kaggle. 
+* Dataset description:
+    * Size: 215063 entries
+    * Features: 6
+        * Attribute Information:
+        1. drugName (categorical): name of drug
+        2. condition (categorical): name of condition
+        3. review (text): patient review
+        4. rating (numerical): 10 star patient rating
+        5. date (date): date of review entry
+        6. usefulCount (numerical): number of users who found review useful
 
 ## Cleaning
-Describe your full process of data wrangling and cleaning. Document why you chose to fill missing values, extract outliers, or create the variables you did as well as your reasoning behind the process.
+* concatenating train and test set
+* > 1000 entries did not have information on the condition. Since condition is an important attribute in our analysis, these entries were dropped.
+* > 85 420 entries duplicated and had to be removed.
+* > 127 000 entries were left for conducting the analysis
+
 
 ## Analysis
-* Overview the general steps you went through to analyze your data in order to test your hypothesis.
-* Document each step of your data exploration and analysis.
-* Include charts to demonstrate the effect of your work.
-* If you used Machine Learning in your final project, describe your feature selection process.
+* Exploratory Analysis: explore and visualize the data in order to get a general understanding of the data
+* ANOVA Analysis to answer Question 1: Between groups (conditions) - do ratings differ significantly?
+* Sentiment Analysis: 1. Clean/Process Text using spacy and nlkt, 2. Conduct Sentiment Analysis using TextBlob
 
-## Model Training and Evaluation
-*Include this section only if you chose to include ML in your project.*
-* Describe how you trained your model, the results you obtained, and how you evaluated those results.
 
 ## Conclusion
-* Summarize your results. What do they mean?
-* What can you say about your hypotheses?
-* Interpret your findings in terms of the questions you try to answer.
+* Question 1: Rating scores depend on the condition the consumer is suffering from
+* Question 2: Rating scores and Reviews do not match each other - Ratings subjective
+
 
 ## Future Work
-Address any questions you were unable to answer, or any next steps or future extensions to your project.
+Future Research can access questions such as whether other features such as the price of drugs have an impact on the rating score.
 
 ## Workflow
 Outline the workflow you used in your project. What were the steps?
-How did you test the accuracy of your analysis and/or machine learning algorithm?
+
+* I started by preparing my data for the analysis and then inspected the data during the Exploratory analysis. 
+* I then conducted a sentiment analysis and compared ratings and review outcomes of the sentiment analysis. 
+* During the process I constantly updated my presentation.
+
 
 ## Organization
-How did you organize your work? Did you use any tools like a trello or kanban board?
+The project was organized using TRELLO.
 
 What does your repository look like? Explain your folder and file structure.
 
 ## Links
-Include links to your repository, slides and trello/kanban board. Feel free to include any other links associated with your project.
+Link UCI: https://archive.ics.uci.edu/ml/datasets/Drug+Review+Dataset+%28Drugs.com%29
+Link Kaggle Kernel: https://www.kaggle.com/lauriandwu/drug-review/
+Link TRELLO: https://trello.com/b/Z1nJfnn5/final-project
+Link Github: https://github.com/laurawuerz/final-project
 
 
-[Repository](https://github.com/)  
-[Slides](https://slides.com/)  
-[Trello](https://trello.com/en)  
