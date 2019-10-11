@@ -14,7 +14,6 @@
 - [Model Training and Evaluation](#model-training-and-evaluation)
 - [Conclusion](#conclusion)
 - [Future Work](#future-work)
-- [Workflow](#workflow)
 - [Organization](#organization)
 - [Links](#links)
 
@@ -60,22 +59,13 @@ The prediction of future sales for all sold products is very good, the distribut
 ## Future Work
 Unfortunatley cased by processing power of my laptop, I wasn´t able to predict the order list for future sales for each product and each shop. I already prepared my data with further features e.g. lag_features and tried the LinearRegression model but my accuracy score stopped at 24%. After trying a different model XGBoost with feeding my prepared data my Laptop crashed.
 
-## Workflow
-Outline the workflow you used in your project. What were the steps?
-How did you test the accuracy of your analysis and/or machine learning algorithm?
-
 ## Organization
 I used Trello.
 
-* All .csv files are raw data. 
-* The .pgn files are plots which I used in my presentation
-* Predict Future Sales - Time Series.ipyng is the code for the time series and contains basicly all the steps I mentioned above
-* Predict Future Sales - SL ML.ipyng is the attempt to predict the order list, based on supevised machine learning with the regression model
+* Presentation 
+* You will find my code at kaggle. Follow the link below.
 
 ## Links
-Include links to your repository, slides and trello/kanban board. Feel free to include any other links associated with your project.
-
-
-[Repository](https://github.com/)  
-[Slides](https://slides.com/)  
-[Trello](https://trello.com/en)  
+[Repository](https://github.com/LindaRit/final-project/edit/master/your-project/)  
+[kaggle](https://slides.com/)  
+[Trello](https://trello.com/b/U8szviml/final-project)  
