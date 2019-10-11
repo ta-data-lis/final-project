@@ -1,9 +1,9 @@
 <img src="https://bit.ly/2VnXWr2" alt="Ironhack Logo" width="100"/>
 
 # Predict Future Sales
-*[Linda Ritter]*
+*Linda Ritter*
 
-*[Data Squad 21, Lisbon 2019-10-11]*
+*Data Squad 21, Lisbon 2019-10-11*
 
 ## Content
 - [Project Description](#project-description)
@@ -19,7 +19,7 @@
 - [Links](#links)
 
 ## Project Description
-To ensure the future growth of your business you have to make wise decisions - now. One step towards this is predict future sales, because this is the base for your business revenue, this is the base for your profability. For that I create a model to forecast the future sales in a time series.
+To ensure the future growth of your business you have to make wise decisions - now. One step towards this is predict future sales, because this is the base for your business revenue, this is the base for your profitability. For that I create a model to forecast the future sales in a time series.
 
 ## Hypotheses / Questions
 * How many products are you going to sell in the future?
