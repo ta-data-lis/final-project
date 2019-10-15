@@ -67,5 +67,5 @@ I used Trello.
 
 ## Links
 [Repository](https://github.com/LindaRit/final-project/edit/master/your-project/)  
-[kaggle](https://slides.com/)  
+[kaggle](https://www.kaggle.com/lindarit/predict-future-sales-time-series-lr?scriptVersionId=21983677)  
 [Trello](https://trello.com/b/U8szviml/final-project)  
