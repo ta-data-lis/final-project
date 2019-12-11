@@ -14,14 +14,15 @@
 <a name="project-description"></a>
 
 ## Project Description
-In this project, you will pick a topic of your choosing and perform an end-to-end analysis using what you have learned. You will apply the statistical or machine learning techniques we have learned over the last few weeks and present your results to all of us.
+In this project, you will pick a topic of your choosing and perform an end-to-end analysis using what you have learned. You will apply the statistical and machine learning techniques we have learned over the last few weeks and present your results to all of us.
 
 <a name="project-goals"></a>
 
 ## Project Goals
 * Ask interesting and thoughful questions and find the data to answer them.
+* Try to find multiple source for your data to make a more complete analysis.
 * Focus on improving in areas that are hard for you or learning more about something with which you feel comfortable. 
-* Apply the statistical and/or machine learning techniques we have learned.
+* Apply the statistical and machine learning techniques we have learned.
 * Create useful and clear graphs.
 * Present your insights in a thoughtful, clear and accurate way.
 
@@ -31,8 +32,7 @@ In this project, you will pick a topic of your choosing and perform an end-to-en
 * You must plan your project. That is why creating a Trello Board is mandatory.
 * You **CAN'T CODE** until you project is planned.
 * This is an individual project.
-* You can include ML or statistics, but it is not required to do so, as long as you have a rigorous analysis.
-
+* It is strongly suggested that you have a rigorous analysis. 
 
 <a name="deliverables"></a>
 
@@ -44,24 +44,28 @@ In this project, you will pick a topic of your choosing and perform an end-to-en
 
 <a name="todolist"></a>
 
-## To Do List
-* Choose your topic and to work as a team or individually.
-
-* Create your repository and README overview (template provided).
-* Choose the dataset you would like to use.
-* Teacher's validation
+## Schedule
+*Thursday - Friday Morning*
+* Think about a topic and propose some questions. 
+* Choose data that is relevant to your questions. 
+* Look for documentation to give context to your project.
+* Write the README file in your repository.
+* Get approval for your project 
+* **DO NOT START CODING**
 
 **NO CODE UNTIL HERE**
 
+*Friday - Wednesday*
+* Start importing the data and cleaning it.
+* Start the analysis. Remember all the techniques you have learned!
+* Prepare a draft of your first slides presentation (no analysis or conclusions yet): title, motivation, context, ...  It is good practice to add the results of your analysis as soon as you obtain them.
 
-* Database schema validation.
+*Thursday*
+* Rehearsal. Take the feedback and use it!
+* Finish the analysis. Finish the slides.
+* Final improvements!
 
-* Data in the database.
-
-* Analysis validation.
-
-* Mock presentations every day at 16:30 (optional, if you require it).
-
+*Friday*
 * Presentation!
 
 <a name="presentation"></a>
@@ -73,6 +77,7 @@ In this project, you will pick a topic of your choosing and perform an end-to-en
 <a name="tips-&-tricks"></a>
 
 ## Tips & Tricks
+* Keep It Simple!!!!
 * Organize yourself (don't get lost!). Respect deadlines.
 * Ask for help vs Google is your friend.
 * Define a simple approach first. You never know how the data can betray you 😉.
