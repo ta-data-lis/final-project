@@ -45,7 +45,7 @@ In this project, you will pick a topic of your choosing and perform an end-to-en
 <a name="todolist"></a>
 
 ## Schedule
-*Thursday - Friday Morning*
+*Wednesday - Thursday*
 * Think about a topic and propose some questions. 
 * Choose data that is relevant to your questions. 
 * Look for documentation to give context to your project.
