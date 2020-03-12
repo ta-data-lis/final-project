@@ -128,4 +128,9 @@ fabric.properties
 # Ignore all local history of files
 .history
 
+
+# Ignoring the datasets
+Your-project/Datasets/*
+
+
 # End of https://www.gitignore.io/api/macos,pycharm,jupyternotebook,visualstudiocode
