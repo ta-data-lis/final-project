@@ -1,3 +1,5 @@
+your-project/csv/*
+your-project/shp/*
 
 # Created by https://www.gitignore.io/api/macos,pycharm,jupyternotebook,visualstudiocode
 # Edit at https://www.gitignore.io/?templates=macos,pycharm,jupyternotebook,visualstudiocode
