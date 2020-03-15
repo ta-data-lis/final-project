@@ -1,6 +1,6 @@
 <img src="https://bit.ly/2VnXWr2" alt="Ironhack Logo" width="100"/>
 
-# Welcome to your Final Project!
+#  Welcome to your Final Project!
 
 ## Content
 - [Project Description](#project-description)
