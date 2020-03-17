@@ -131,6 +131,7 @@ fabric.properties
 
 # Ignoring the datasets
 Your-project/Datasets/*
+Your-project/__pycache__
 
 
 # End of https://www.gitignore.io/api/macos,pycharm,jupyternotebook,visualstudiocode
