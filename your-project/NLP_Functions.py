@@ -75,3 +75,19 @@ ds_sample['text_processed'] = \
 ds_sample['text'].apply(lambda x: remove_stopwords(stem_and_lemmatize(tokenize(
 clean_up(x)))))
 '''
+
+
+# Building the features
+
+
+def find_features(document, bow):
+    text = document.lower()
+    features = dict()
+    for w, c in bow:
+        features[w] = w in text
+    return features
+
+
+def make_matrix(series_text, series_target, bow):
+    return [(find_features(s, bow), t)
+            for s, t in zip(series_text.values, series_target.values)]
