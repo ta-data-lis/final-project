@@ -35,6 +35,21 @@ def tokenize(s):
     return nltk.word_tokenize(s)
 
 
+def remove_stopwords(lst, lang='english'):
+    """
+    Remove English (default) stopwords from a list of strings.
+
+    Args:
+        lst: A list of strings.
+        lang = Language of the stopwords.
+
+    Returns:
+        A list of strings after stop words are removed.
+    """
+    stop_words = stopwords.words(lang)
+    return [word for word in lst if word not in stop_words]
+
+
 def stem_and_lemmatize(l):
     """
     Perform stemming and lemmatization on a list of words.
@@ -54,26 +69,10 @@ def stem_and_lemmatize(l):
     return lemmed_on_stemmed_list
 
 
-def remove_stopwords(lst, lang='english'):
-    """
-    Remove English (default) stopwords from a list of strings.
-
-    Args:
-        lst: A list of strings.
-        lang = Language of the stopwords.
-
-    Returns:
-        A list of strings after stop words are removed.
-    """
-    stop_words = stopwords.words(lang)
-    return [word for word in lst if word not in stop_words]
-
-
 # Example of using all those NLP funcs in a Pandas' Series
 '''
 ds_sample['text_processed'] = \
-ds_sample['text'].apply(lambda x: remove_stopwords(stem_and_lemmatize(tokenize(
-clean_up(x)))))
+ds_sample['text'].apply(stem_and_lemmatize(remove_stopwords(tokenize(clean_up(x)))))
 '''
 
 
