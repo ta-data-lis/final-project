@@ -129,9 +129,10 @@ fabric.properties
 .history
 
 
-# Ignoring the datasets
+# Ignoring the datasets & other things
 Your-project/Datasets/*
 Your-project/__pycache__
+Your-project/Data Analytics - Final Project Script.pages
 
 
 # End of https://www.gitignore.io/api/macos,pycharm,jupyternotebook,visualstudiocode
