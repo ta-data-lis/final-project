@@ -22,7 +22,7 @@
 Sentiment Analysis on Tweets relating to Brexit throughout the year 2019. Identifying if there were more positive tweets refering to Theresa May or Boris Johnson and whether people became more accepting of Brexit throughout the year.
 
 ## Hypotheses / Questions
-* Which prime minister made people more comfortable with Brexit? 
+* Which prime minister made people more accepting of the prospect of the UK leaving the European Union? 
 
 ## Dataset
 Built my own dataset from extracting tweets with GetOldTweets3 Library. All tweets refer to Brexit.
