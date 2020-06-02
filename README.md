@@ -1,90 +1,68 @@
 <img src="https://bit.ly/2VnXWr2" alt="Ironhack Logo" width="100"/>
 
-# Welcome to your Final Project!
+# Title of My Project
+*Ana Horta*
+
+*Data Analytics at Ironhack Bootcmap, Lisbon, January 2020*
 
 ## Content
 - [Project Description](#project-description)
-- [Project Goals](#project-goals)
-- [Requirements](#requirements)
-- [Deliverables](#deliverables)
-- [To Do List](#todolist)
-- [Presentation](#presentation)
-- [Tips & Tricks](#tips-&-tricks)
-
-<a name="project-description"></a>
+- [Hypotheses / Questions](#hypotheses-questions)
+- [Dataset](#dataset)
+- [Cleaning](#cleaning)
+- [Analysis](#analysis)
+- [Model Training and Evaluation](#model-training-and-evaluation)
+- [Conclusion](#conclusion)
+- [Future Work](#future-work)
+- [Workflow](#workflow)
+- [Organization](#organization)
+- [Links](#links)
 
 ## Project Description
-In this project, you will pick a topic of your choosing and perform an end-to-end analysis using what you have learned. You will apply the statistical and machine learning techniques we have learned over the last few weeks and present your results to all of us.
+Sentiment Analysis on Tweets relating to Brexit throughout the year 2019. Identifying if there were more positive tweets refering to Theresa May or Boris Johnson and whether people became more accepting of Brexit throughout the year.
 
-<a name="project-goals"></a>
+## Hypotheses / Questions
+* Which prime minister made people more accepting of the prospect of the UK leaving the European Union? 
 
-## Project Goals
-* Ask interesting and thoughful questions and find the data to answer them.
-* Try to find multiple source for your data to make a more complete analysis.
-* Focus on improving in areas that are hard for you or learning more about something with which you feel comfortable. 
-* Apply the statistical and machine learning techniques we have learned.
-* Create useful and clear graphs.
-* Present your insights in a thoughtful, clear and accurate way.
+## Dataset
+Built my own dataset from extracting tweets with GetOldTweets3 Library. All tweets refer to Brexit.
 
-<a name="requirements"></a>
+## Cleaning
+I first dropped columns which were not relevant for my analysis and then dropped any remaining rows with null values and duplicate entries. I changed the date column type from object to datetime format and then removed all non-english tweets. I also stop checked top users with most frequent tweets and removed this from my dataset as the majority looked like fake & news accounts and did not add any meaningful value to my analysis. Adittionally, all accounts with 'brexit' in the name which displayed troll behaviour were also removed.
 
-## Requirements
-* You must plan your project. That is why creating a Trello Board is mandatory.
-* You **CAN'T CODE** until you project is planned.
-* This is an individual project.
-* It is strongly suggested that you have a rigorous analysis. 
+I then proceeded to check which tweets referred to Theresa May and Boris Johnson and added this information to a new column named 'PM'. I removed all tweets that did not mention either of the PM's as this was not meaningful to my analysis on what people were saying about the PM's within the context of Brexit. My new shape is 30,143 rows.
 
-<a name="deliverables"></a>
+## Analysis
+* Overview the general steps you went through to analyze your data in order to test your hypothesis.
+* Document each step of your data exploration and analysis.
+* Include charts to demonstrate the effect of your work.
+* If you used Machine Learning in your final project, describe your feature selection process.
 
-## Deliverables
-* A well-commented notebook with your analysis (Jupyter or Kaggle).
-* A 5 minute presentation in the classroom (+2 minutes of questions).
-* Repository with your workflow + documentation + code. Even if you are working alone, you need to keep good practices!
-* The database where you have kept your data.  
+## Model Training and Evaluation
+*Include this section only if you chose to include ML in your project.*
+* Describe how you trained your model, the results you obtained, and how you evaluated those results.
 
-<a name="todolist"></a>
+## Conclusion
+* Summarize your results. What do they mean?
+* What can you say about your hypotheses?
+* Interpret your findings in terms of the questions you try to answer.
 
-## Schedule
-*Wednesday - Thursday*
-* Think about a topic and propose some questions. 
-* Choose data that is relevant to your questions. 
-* Look for documentation to give context to your project.
-* Write the README file in your repository.
-* Get approval for your project 
-* **DO NOT START CODING**
+## Future Work
+Address any questions you were unable to answer, or any next steps or future extensions to your project.
 
-**NO CODE UNTIL HERE**
+## Workflow
+Outline the workflow you used in your project. What were the steps?
+How did you test the accuracy of your analysis and/or machine learning algorithm?
 
-*Friday - Wednesday*
-* Start importing the data and cleaning it.
-* Start the analysis. Remember all the techniques you have learned!
-* Prepare a draft of your first slides presentation (no analysis or conclusions yet): title, motivation, context, ...  It is good practice to add the results of your analysis as soon as you obtain them.
+## Organization
+How did you organize your work? Did you use any tools like a trello or kanban board?
 
-*Thursday*
-* Rehearsal. Take the feedback and use it!
-* Finish the analysis. Finish the slides.
-* Final improvements!
+What does your repository look like? Explain your folder and file structure.
 
-*Friday*
-* Presentation!
-
-<a name="presentation"></a>
-
-## Presentation
-* 5 minutes presentation in the classroom (+2 minutes of questions).
+## Links
+Include links to your repository, slides and trello/kanban board. Feel free to include any other links associated with your project.
 
 
-<a name="tips-&-tricks"></a>
-
-## Tips & Tricks
-* Keep It Simple!!!!
-* Organize yourself (don't get lost!). Respect deadlines.
-* Ask for help vs Google is your friend.
-* Define a simple approach first. You never know how the data can betray you 😉.
-* Document yourself. Learn about the problem and what research has been done before you.
-* Before making a graph, think what you want to represent.
-* Don't force yourself to use tecniques if they are not helpful for your objective.
-* If using machine learning, remember:
-  * This is an iterative process. Try your best to improve your model performance by:
-    * Try different models and select one that is the simplest yet produce the best result.
-    * Try different hyperparameters and see if they improve the result.
+[Repository](https://github.com/)  
+[Slides](https://slides.com/)  
+[Trello](https://trello.com/en)  
