@@ -1,9 +1,9 @@
 <img src="https://bit.ly/2VnXWr2" alt="Ironhack Logo" width="100"/>
 
-# Title of My Project
+# Sentiment Analysis on Brexit
 *Ana Horta*
 
-*Data Analytics at Ironhack Bootcmap, Lisbon, January 2020*
+*Data Analytics at Ironhack Bootcamp, Lisbon, January 2020*
 
 ## Content
 - [Project Description](#project-description)
