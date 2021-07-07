@@ -1,9 +1,9 @@
 <img src="https://bit.ly/2VnXWr2" alt="Ironhack Logo" width="100"/>
 
 # Title of My Project
-*[Your Name]*
+*Ana Horta*
 
-*[Your Cohort, Campus & Date]*
+*Data Analytics at Ironhack Bootcmap, Lisbon, January 2020*
 
 ## Content
 - [Project Description](#project-description)
@@ -19,22 +19,18 @@
 - [Links](#links)
 
 ## Project Description
-Write a short description of your project: 3-5 sentences about what your project is about, why you chose this topic (if relevant), and what you are trying to show.
+Sentiment Analysis on Tweets relating to Brexit throughout the year 2019. Identifying if there were more positive tweets refering to Theresa May or Boris Johnson and whether people became more accepting of Brexit throughout the year.
 
 ## Hypotheses / Questions
-* What data/business/research/personal question you would like to answer?
-* What is the context for the question and the possible scientific or business application?
-* What are the hypotheses you would like to test in order to answer your question?  
-Frame your hypothesis with statistical/data languages (i.e. define Null and Alternative Hypothesis). You can use formulas if you want but that is not required.
+* Which prime minister made people more accepting of the prospect of the UK leaving the European Union? 
 
 ## Dataset
-* Where did you get your data? If you downloaded a dataset (either public or private), describe where you downloaded it and include the command to load the dataset.
-* Did you build your own datset? If so, did you use an API or a web scraper? PRovide the relevant scripts in your repo.
-* For all types of datasets, provide a description of the size, complexity, and data types included in your dataset, as well as a schema of the tables if necessary.
-* If the question cannot be answered with the available data, why not? What data would you need to answer it better?
+Built my own dataset from extracting tweets with GetOldTweets3 Library. All tweets refer to Brexit.
 
 ## Cleaning
-Describe your full process of data wrangling and cleaning. Document why you chose to fill missing values, extract outliers, or create the variables you did as well as your reasoning behind the process.
+I first dropped columns which were not relevant for my analysis and then dropped any remaining rows with null values and duplicate entries. I changed the date column type from object to datetime format and then removed all non-english tweets. I also stop checked top users with most frequent tweets and removed this from my dataset as the majority looked like fake & news accounts and did not add any meaningful value to my analysis. Adittionally, all accounts with 'brexit' in the name which displayed troll behaviour were also removed.
+
+I then proceeded to check which tweets referred to Theresa May and Boris Johnson and added this information to a new column named 'PM'. I removed all tweets that did not mention either of the PM's as this was not meaningful to my analysis on what people were saying about the PM's within the context of Brexit. My new shape is 30,143 rows.
 
 ## Analysis
 * Overview the general steps you went through to analyze your data in order to test your hypothesis.
